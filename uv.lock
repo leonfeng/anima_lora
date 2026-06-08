@@ -909,7 +909,7 @@ sdist = { url = "https://files.pythonhosted.org/packages/f6/1d/ac8914360460fafa1
 [[package]]
 name = "flash-attn"
 version = "2.8.3+cu132torch2.12"
-source = { url = "https://github.com/mjun0812/flash-attention-prebuild-wheels/releases/download/v0.9.17/flash_attn-2.8.3+cu132torch2.12-cp313-cp313-linux_x86_64.whl" }
+source = { url = "https://github.com/mjun0812/flash-attention-prebuild-wheels/releases/download/v0.9.22/flash_attn-2.8.3+cu132torch2.12-cp313-cp313-linux_aarch64.whl" }
 resolution-markers = [
     "platform_machine == 'x86_64' and sys_platform == 'linux'",
 ]
@@ -918,7 +918,7 @@ dependencies = [
     { name = "torch", version = "2.12.0+cu132", source = { registry = "https://download.pytorch.org/whl/cu132" }, marker = "platform_machine == 'x86_64' and sys_platform == 'linux'" },
 ]
 wheels = [
-    { url = "https://github.com/mjun0812/flash-attention-prebuild-wheels/releases/download/v0.9.17/flash_attn-2.8.3+cu132torch2.12-cp313-cp313-linux_x86_64.whl", hash = "sha256:f42938baa6928477426435bd479fe62b27b12b9fe0cc54019e43a3637c1a5cf6" },
+    { url = "https://github.com/mjun0812/flash-attention-prebuild-wheels/releases/download/v0.9.22/flash_attn-2.8.3+cu132torch2.12-cp313-cp313-linux_aarch64.whl", hash = "sha256:34304ebe2047de9ec400baf7633431033602a05e5297a32f23d6bc2d674254aa" },
 ]
 
 [package.metadata]
