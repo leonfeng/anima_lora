@@ -246,6 +246,11 @@ COMMANDS = {
         "Remove resized/latent/PE/mask caches stale for the configured "
         'target_res (dry-run; ARGS="--delete" to act). Run after changing tiers.',
     ),
+    "preprocess-auto": (
+        preprocess.cmd_preprocess_auto,
+        "Scan image_dataset/, pick optimal --target_res from resolution "
+        "distribution, then run make preprocess",
+    ),
     "preprocess-vae": (preprocess.cmd_preprocess_vae, "Cache VAE latents"),
     "preprocess-te": (preprocess.cmd_preprocess_te, "Cache text encoder embeddings"),
     "preprocess-captions": (
