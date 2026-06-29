@@ -473,6 +473,11 @@ def _drop_option_with_value(extra, names: set[str]) -> list[str]:
     return cleaned
 
 
+def cmd_preprocess_auto(extra):
+    """Scan source images, recommend target_res tiers, run full preprocess."""
+    run([PY, "scripts/preprocess/auto_preprocess.py", *extra])
+
+
 def cmd_preprocess_resize(extra):
     mp_args, extra = _resolve_lowres_filter(extra)
     tr_args = _target_res_args(extra)
